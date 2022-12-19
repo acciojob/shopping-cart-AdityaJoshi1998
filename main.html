@@ -8,30 +8,30 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<div class="container">
-        <div class="cart">
-            <div class="input">
-                <div><input id="item-name-input"  type="text" placeholder="Name" /></div>
-                <br />
-                <div><input id="item-price-input " type="number" placeholder="Price" /></div>
-                <br />
-            </div>
-            <div class="btn">
-                <button id="add">Add</button>
-            </div>
-            <br />
-            <div class="data">
-                <table id="table" style="width: 30%">
-                <tr>
-                            <th id="item">Item</th>
-                            <th id="price">Price</th>
-                        </tr>
-                </table>
-            </div>
-        </div>
-        <h3 id="total"></h3>
-    </div>
-
+	<header id="heading">
+		<h3>Shopping List Calculator</h3><br><br>
+	</header>
+	<main onload="render()">
+		<table id="table">
+			
+			<tr>
+				<th>Item Name</th>
+				<th>Quantity</th>
+				<th>Price</th>
+				<th>Total</th> 
+			</tr>
+			<tr>
+        <form id="input">
+          <td><input type="text" id="itemname" placeholder="Name of Product"></td>
+          <td><input type="text" id="itemquantity" placeholder=" Enter Quantity"></td>
+          <td><input type="text" id="itemprice" placeholder="Enter Price"></td>
+        </form>
+        <td><button id="add" onclick="addData();">Add</button></td>
+      </tr>
+    </table><br><br>
+    <div id="total">Total Ammount is 0 RS</div>
+  </main>
+	
     <script type="text/javascript" src="script.js">
 </script>
 
