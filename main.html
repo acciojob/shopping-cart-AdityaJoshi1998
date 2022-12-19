@@ -8,7 +8,31 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
+	<div class="container">
+        <div class="cart">
+            <div class="input">
+                <div><input id="item-name-input"  type="text" placeholder="Name" /></div>
+                <br />
+                <div><input id="item-price-input " type="number" placeholder="Price" /></div>
+                <br />
+            </div>
+            <div class="btn">
+                <button id="add">Add</button>
+            </div>
+            <br />
+            <div class="data">
+                <table id="table" style="width: 30%">
+                <tr>
+                            <th id="item">Item</th>
+                            <th id="price">Price</th>
+                        </tr>
+                </table>
+            </div>
+        </div>
+        <h3 id="total"></h3>
+    </div>
+
+    <script type="text/javascript" src="script.js">
 </script>
 
 </body>
